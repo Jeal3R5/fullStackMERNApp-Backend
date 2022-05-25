@@ -28,7 +28,7 @@ const PeopleSchema = new mongoose.Schema({
 const People = mongoose.model("People", PeopleSchema);
 
 //Middleware
-app.use(cors);
+app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
